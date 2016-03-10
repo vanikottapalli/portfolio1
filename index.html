@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<title>My Project</title>
+<link type="text/css" rel="stylesheet" href="style.css"/>
+
+<!--
+<img src="http://localhost/Images/Photos/Cake.jpg"> 
+<script type="text/javascript">
+var slideimages = new Array() // create new array to preload images
+slideimages[0] = new Image() // create new instance of image object
+slideimages[0].src = "/Images/Photos/Cake.jpg" // set image src property to image path, preloading image in the process
+slideimages[1] = new Image()
+slideimages[1].src = "/Images/Photos/Cookie3.jpg"
+slideimages[2] = new Image()
+slideimages[2].src = "/Images/Photos/Cupcake.jpg"
+</script>
+-->
+
+
+<head>
+<body>
+<div id="menubg">
+<div id="menu">
+<ul> 
+<li> <a href="resume.html" target="_self">Resume </a></li>
+<li> <a href="#about" target="_self">About </a></li>
+<li> <a href="#projects" target="_self">Projects </a></li>
+<li> <a href="#contact" target="_self">Contact </a></li>
+</ul>
+</div>
+</div>
+</head>
+
+<div>
+<div class="wrap">
+        <div class="type-wrap">
+                <h2>Hey! My name is Vani,
+					and I'm a 	<span id="typed" style="white-space:pre;"></span>	
+						
+						<br>
+					based in NorthCarolina. <a href="#contact">Let's talk!</a></h2>
+            
+        </div>
+
+</div>
+
+
+<!--<div id="slideshow";>
+<a href="javascript:slidelink()"><img src="/Images/Photos/Cake.jpg" id="slide" width=1000 height=400 /></a>
+<script type="text/javascript">
+
+//variable that will increment through the images
+var step = 0
+var whichimage = 0
+
+function slideit(){
+ //if browser does not support the image object, exit.
+ if (!document.images)
+  return
+ document.getElementById('slide').src = slideimages[step].src
+ whichimage = step
+ if (step<2)
+  step++
+ else
+  step=0
+ //call function "slideit()" every 2.5 seconds
+ setTimeout("slideit()",2500)
+}
+slideit()
+
+</script>
+</div>
+<!--
+<div id="button">
+<a href="#">Submit</a>
+</div>-->
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/typed.js" type="text/javascript"></script>
+    <script>
+    $(function(){
+
+        $("#typed").typed({
+            strings: ["web application developer","graphic designer"],
+            typeSpeed: 30,
+            backDelay: 500,
+            loop: true,
+            contentType: 'html', 
+            loopCount: false,
+            callback: function(){ foo(); },
+            resetCallback: function() { newTyped(); }
+        });
+
+        $(".reset").click(function(){
+            $("#typed").typed('reset');
+        });
+
+    });
+
+    function newTyped(){  }
+
+    function foo(){ console.log("Callback"); }
+
+    </script>
+	
+    
+    <style>
+        /* blinking cursor */
+        .typed-cursor{
+            opacity: 1;
+            font-weight: 100;
+            -webkit-animation: blink 0.7s infinite;
+            -moz-animation: blink 0.7s infinite;
+            -ms-animation: blink 0.7s infinite;
+            -o-animation: blink 0.7s infinite;
+            animation: blink 0.7s infinite;
+        }
+        @-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-webkit-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-moz-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-ms-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-o-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+    </style>
+</head>
+<body>
+<div id="line">
+</div>
+<div id="projects-head" style="width:1000px; height:550px; margin:auto;">
+<div id="projects">
+<h1>Projects</h1>
+<img width=200px height=200px src="/Images/risen.jpg"/>
+<img width=200px height=200px src="/Images/risen.jpg"/>
+<p> Rise N Shin LLC </p>
+</div>
+</div>
+<div id="line">
+
+</div>
+<div id="about" style="width:1000px; height:550px; margin:auto;">
+<div id="about-me">
+<h1> About </h1>
+<p class="intro">Hi, I’m Vani! I am a Front End Web developer from NorthCarolina, USA,<br>
+		who builds websites and web applications for startups, established businesses, nonprofits, and other organizations.<br><br>
+		I prefer to work with modern JavaScript-based platforms such as Node.js and AngularJS, <br>
+		but I also have more than 3 years of experience building more traditional PHP/MySQL applications as well. <br>
+		For simpler projects I use WordPress.</p>
+		
+</div>
+</div>
+<div id="line">
+
+</div>
+<div id="contact" style="width:1000px; height:400px; margin:auto;">
+	<div id="contact-head">Contact Form</div>	
+	<form class="form" method="post" action="send.php">		
+		<p class="name">
+			<input type="text" name="name" id="name" placeholder="John Doe" size="40"/>
+			<label for="name">&nbsp;&nbsp; Your Name</label>
+		</p>
+		
+		<p class="email">
+			<input type="text" name="email" id="email" placeholder="mail@example.com" size="40"/>
+			<label for="email">&nbsp;&nbsp; Your Email</label>
+		</p>
+		<p class="text">
+			<textarea name="text" placeholder="Write something to us" cols="40" rows="10"/></textarea>
+			<label for="message">&nbsp;&nbsp; Your Message</label>
+		</p>		
+		<input type="submit" value="Submit Form" name="submit">
+	</form>
+</div>
+
+<div id="footer">
+				<p>
+					&copy; 2016 Vani Kottapalli - All Rights Reserved.<br/>
+					Site designed and coded by Vani Kottapalli.
+				</p>
+					<ul id="menu">
+						<li><a href="#about">about</a></li>
+						<li><a href="#contact">contact</a></li>
+					
+						<li><a href="#menu">top</a></li>
+						<li><a href="#projects">work</a></li>
+					</ul>
+
+</div>
+
+</body>
+</html>

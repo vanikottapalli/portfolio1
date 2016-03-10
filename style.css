@@ -1,0 +1,57 @@
+html{ padding:0px; margin:0px; }
+body{
+	 padding: 0px; margin:0px;
+	 position: relative;
+	 background:url("../NewProject/Images/welcome.jpg") repeat;
+	}
+/* #header1{width:1000px; height: 100px; text-align:center; margin-left:auto; margin-right:auto; color:White; background:url("http://localhost/Images/Photos/blueheader.jpg");}*/
+
+#slideshow{width:1000px; height:400px; background:lightblue; margin:auto; border:1px solid black;}
+#button {width:50px; height:25px; margin-top:10px; background:black; padding: 10px 20px; border-radius:20px; margin-left:auto; margin-right:auto; float:left;}
+    #button a{text-decoration:none; color:#fff; font-weight:bold; font-size:120%; cursor:pointer;}
+
+#menubg{
+		height:165px;
+		background-image: url("http://localhost/NewProject/Images/menu.png"), url("http://localhost/NewProject/Images/fixed_topbar.png") ; 
+		background-position: center, center;
+		background-repeat: repeat, no-repeat, repeat;
+		}
+#menu{width:500px; height:40px; margin-left:auto; margin-right:auto; text-align:center; padding-top:20px;}
+	#menu li {
+		width:90px;
+		
+		display:inline-block; 
+		text-align:center;
+		}
+li a{margin-top:20px; text-decoration:none; text-align:center; font-size:120%; font-family:"Verdana"; color:#fff;}
+li a:hover{ color:red;}
+
+#projects img  {float:center; padding-top:25px; margin-left:100px;}
+#projects  p{margin-left:130px; font-size:100%; font-weight:bold;}
+#line{background : url(http://localhost/Images/menu.jpg); margin:auto; width:1000px; height:3px;}
+#about-me, #projects{padding-top:25px; margin-left:100px; color: #fff;}
+#contact-head{margin-left:20px; padding-top:20px; font-weight:bold; color: #fff; font-size:150%;}
+.intro{font-size:130%; margin-left:25px; font-family:Tahoma;}
+
+.form{margin-left:20px; font-size:100%; font-weight:bold;}
+	label { color: #fff;}
+.submit{background:red; width:50px; height:25px; border:1px solid black;}
+
+.wrap{
+	max-width: 900px;
+	margin:20px auto;
+}
+
+.type-wrap{
+	margin:10px auto;
+	font-family: "Cambria";
+	font-size: 100%;
+	color:brown;
+}
+.type-wrap a{text-decoration:none; color:#fff; cursor:pointer;}
+.links{
+	margin:20px 0;
+	font-size: 0.75em;
+	text-align: center;
+}
+#footer p{text-align:center; color:#fff;}
